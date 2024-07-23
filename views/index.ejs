@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu de Navigation</title>
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/test.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico:wght@400&display=swap" rel="stylesheet"> <!-- Link to a finer hand-written style font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;300&display=swap" rel="stylesheet"> <!-- Link to Inria Serif font -->
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay muted loop id="background-video">
+            <source src="video/video.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <nav>
+        <div class="nav-left">
+            <div class="logo">
+                <img src="img/AlMoutmirFR.png" alt="Logo">
+            </div>
+        </div>
+        <div class="nav-center">
+            <ul>
+                <li><a href="#"><i class="fas fa-home"></i> Accueil</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn"><i class="fas fa-calendar-alt"></i> Agenda</a>
+                    <div class="dropdown-content">
+                        <a href="#">Événements</a>
+                        <a href="#">Calendrier</a>
+                        <a href="#">Tâches</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn"><i class="fas fa-seedling"></i> Les phases de croissance de l'Olivier</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="user-login">
+                <a href="connecter"><i class="fas fa-user"></i>connecter</a>
+                <a href="insc"><i class="fas fa-user-plus"></i> S'inscrire</a>
+                <a href="admin"><i class="fas fa-user-lock"></i> Admin</a>
+            </div>
+        </div>
+    </nav>
+
+  <div class="textes">
+        <p id="bienvenue" class="text">Bienvenue sur le site</p>
+        <p id="etapes" class="text">d'Olive Garden</p>
+    </div>
+
+
+    <div class="phase-title">
+        <i class="fas fa-leaf"></i> Les phases de croissance de l'Olivier
+    </div>
+    <!-- Div for Carousel -->
+<div class="carousel-container">
+    <div class="carousel">
+        <!-- Étape 1 -->
+        <div class="carousel-item">
+            <img src="img/1.jpg" alt="Repos végétatif">
+            <h3>Le repos végétatif</h3>
+            <p>les activités de l’arbre tournent au ralenti et sont même parfois arrêtées</p>
+        </div>
+        <!-- Étape 2 -->
+        <div class="carousel-item">
+            <img src="img/2.jpg" alt="Réveil végétatif">
+            <h3>Réveil végétatif</h3>
+            <p>le fruit et de nouvelles branches de couleur claire commencent à se développer.</p>
+        </div>
+        <!-- Étape 3 -->
+        <div class="carousel-item">
+            <img src="img/3.jpg" alt="Apparition de boutons floraux">
+            <h3>Bouts floraux</h3>
+            <p>Inflorescences vertes, apparition des boutons floraux.</p>
+        </div>
+        <!-- Étape 4 -->
+        <div class="carousel-item">
+            <img src="img/4.jpg" alt="Floraison">
+            <h3>Floraison</h3>
+            <p>les fleurs ouvertes permettent la pollinisation et la fécondation</p>
+        </div>
+        <!-- Étape 5 -->
+        <div class="carousel-item">
+            <img src="img/5.jpg" alt="Fructification">
+            <h3>Fructification</h3>
+            <p>Les olives Arriver leur taille maximales, prêtes pour la récolte</p>
+        </div>
+        <!-- Étape 6 -->
+        <div class="carousel-item">
+            <img src="img/6.jpg" alt="Développement des fruits – Nouaison">
+            <h3>Nouaison</h3>
+            <p>Les fleurs fécondées se transforment en petits fruits</p>
+        </div>
+        <!-- Étape 7 -->
+        <div class="carousel-item">
+            <img src="img/7.jpg" alt="Durcissement du noyau">
+            <h3>Durcissement du noyau</h3>
+            <p>la fin de la formation des fruits, ils deviennent plus résistants à la coupe</p>
+        </div>
+        <!-- Étape 8 -->
+        <div class="carousel-item">
+            <img src="img/8.jpg" alt="Croissance des fruits">
+            <h3>Croissance des fruits</h3>
+            <p>Augmentation considérable de la taille des fruits et apparition des lenticelles.</p>
+        </div>
+        <!-- Étape 9 -->
+        <div class="carousel-item">
+            <img src="img/9.jpg" alt="Début de la maturation du fruit">
+            <h3>Maturation fruit</h3>
+            <p>le fruit de couleur verte et  la moitié de la surface du fruit vire du vert au viole.</p>
+        </div>
+        <!-- Étape 10 -->
+        <div class="carousel-item">
+            <img src="img/10.jpg" alt="Maturation">
+            <h3>Maturation</h3>
+            <p>À maturation complète, le fruit se pare d’une couleur violacée</p>
+        </div>
+        <!-- Étape 11 -->
+        <div class="carousel-item">
+            <img src="img/11.jpg" alt="Récolte et transformation">
+            <h3>Récolte </h3>
+            <p>Récolte des fruits, pressage pour obtenir l'huile d'olive.</p>
+        </div>
+    </div>
+    <button class="carousel-button prev" onclick="moveCarousel(-1)">&#10094;</button>
+    <button class="carousel-button next" onclick="moveCarousel(1)">&#10095;</button>
+</div>
+
+
+    <script src="script/jss.js"></script>
+</body>
+</html>

@@ -1,0 +1,260 @@
+/* Resetting default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffadf;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for the video background */
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+video#background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Navigation bar styles */
+nav {
+    background-color: rgba(84, 126, 99, 0.5);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.nav-left, .nav-center, .nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-center {
+    flex-grow: 1;
+    justify-content: center;
+}
+
+nav .logo img {
+    height: 50px;
+    width: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: block;
+}
+
+nav ul li a,
+.dropbtn {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    background-color: transparent;
+}
+
+nav ul li a:hover,
+.dropdown:hover .dropbtn {
+    background-color: transparent;
+}
+
+nav ul li.dropdown {
+    position: relative;
+}
+
+nav ul .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+}
+
+nav ul .dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    background-color: rgb(9, 68, 13);
+}
+
+nav ul .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.user-login {
+    display: flex;
+    margin-right: 20px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.user-login a {
+    color: rgb(241, 255, 247);
+    text-decoration: none;
+    padding: 12px;
+    display: block;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.nav-right .user-login {
+    margin-left: auto;
+}
+
+/* Texts animation styles */
+.textes {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text {
+    color: rgb(255, 255, 255);
+    font-size: 70px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#bienvenue {
+    visibility: hidden;
+}
+
+#etapes {
+    font-family: 'Pacifico', cursive;
+    visibility: hidden;
+    color: #a7e0c1;
+    font-family: 'Inria Serif', serif;
+    font-size: 80px;
+}
+
+
+/* Carousel section styling */
+.carousel-container {
+    position: relative;
+    width: 80%;
+    max-width: 2000px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 10px auto; /* Add space between presentation and carousel */
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    flex: 1 0 33.33%; /* 100% / 3 images = 33.33% per image */
+    box-sizing: border-box;
+    background-color: #d3e7db3d;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 540px;
+    margin-right: 0;
+    position: relative;
+    border: 1px solid white;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.carousel-item h3, .carousel-item p {
+    margin: 0;
+    padding: 5px 0;
+}
+
+.carousel-item h3 {
+    font-family: 'Inria Serif', serif;
+
+    font-size: 30px;
+    color: rgb(26 32 21 / 81%);
+    font-weight: 500;
+}
+
+.carousel-item p {
+    font-size: 21px;
+    color: #4c784d;
+    text-align: center;
+    font-family: 'Inria Serif', serif;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #93c77359;
+    border: none;
+    color: #ffffff;
+    font-size: 60px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel-button.prev {
+    left: 1px;
+}
+
+.carousel-button.next {
+    right: 1px;
+}
+.phase-title {
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 80px;
+    color: #496049;
+    margin: 30px auto;
+    padding: 10px;
+    position: relative;
+}
+
+.phase-title i {
+    font-size: 100px;
+    color: #2d482d;
+    margin-right: 10px;
+}
